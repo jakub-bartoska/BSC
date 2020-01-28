@@ -18,7 +18,7 @@ public class Scheduler {
         this.printResultCommand = printResultCommand;
     }
 
-    @Scheduled(fixedRate = 30000)
+    @Scheduled(fixedRate = 60000)
     public void printWeights() {
         printResultCommand.execute("");
     }
